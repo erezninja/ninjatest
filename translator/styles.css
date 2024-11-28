@@ -1,98 +1,71 @@
-/* Global Styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f4f4f9;
-  color: #333;
-}
-
-header {
+/* About Us Section */
+#about {
+  background: #f9f9f9;
+  padding: 60px 20px;
   text-align: center;
-  padding: 20px;
-  background: linear-gradient(90deg, #6a11cb, #2575fc);
-  color: white;
 }
 
-header h1 {
+#about h2 {
   font-size: 2.5em;
+  margin-bottom: 30px;
 }
 
-nav a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-
-#hero {
-  text-align: center;
-  padding: 50px 20px;
-  background: #ffffff;
-  animation: fadeIn 2s ease-in-out;
-}
-
-#hero h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-
-#cta-button {
-  padding: 10px 20px;
-  background: #6a11cb;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  font-size: 1.2em;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-#cta-button:hover {
-  background: #2575fc;
-}
-
-#features {
+.about-content {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.about-text {
+  flex: 2 1 400px;
+  text-align: left;
+  max-width: 600px;
+  line-height: 1.8;
+  animation: slideIn 1.5s ease-in-out;
+  font-size: 1.1em;
+}
+
+.about-icons {
+  flex: 1 1 300px;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  padding: 40px 20px;
 }
 
-.card {
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+.icon {
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 150px;
 }
 
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+.icon img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 10px;
 }
 
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #333;
-  color: white;
+.icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-footer a {
-  color: #6a11cb;
-  text-decoration: none;
+.icon p {
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 10px;
 }
 
 /* Animations */
-@keyframes fadeIn {
+@keyframes slideIn {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateX(-20px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
