@@ -38,6 +38,16 @@
     </div>
   </section>
 
+  <section id="widget">
+    <h2>Our Widget</h2>
+    <p>
+      Explore our interactive widget below, powered by Common Ninja. This widget demonstrates the seamless 
+      integration of dynamic components into your web project, making it more interactive and user-friendly.
+    </p>
+    <script src="https://cdn.commoninja.com/sdk/latest/commonninja.js" defer></script>
+    <div class="commonninja_component pid-62467e79-0599-4896-8b92-af14c5014551"></div>
+  </section>
+
   <section id="about">
     <h2>About Us</h2>
     <div class="about-content">
@@ -75,18 +85,23 @@
     </div>
   </section>
 
-  <section id="widget">
-    <h2>Our Widget</h2>
-    <p>
-      Explore our interactive widget below, powered by Common Ninja. This widget demonstrates the seamless 
-      integration of dynamic components into your web project, making it more interactive and user-friendly.
-    </p>
-    <script src="https://cdn.commoninja.com/sdk/latest/commonninja.js" defer></script>
-    <div class="commonninja_component pid-aea6f7ad-e7b4-4c38-8096-b1e11e13f904"></div>
-  </section>
-
   <footer id="contact">
-    <p>Contact us at <a href="mailto:info@example.com">info@example.com</a></p>
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email">
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required placeholder="Enter your message"></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
   </footer>
 
   <script src="script.js"></script>
